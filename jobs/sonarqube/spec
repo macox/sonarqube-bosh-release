@@ -1,0 +1,11 @@
+---
+name: sonarqube
+
+templates:
+     bin/ctl.sh: bin/ctl.sh
+
+packages:
+    - java
+    - sonarqube
+
+properties: {}

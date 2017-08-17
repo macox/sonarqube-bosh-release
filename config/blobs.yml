@@ -1,0 +1,8 @@
+java/jdk-8u144-linux-x64.tar.gz:
+  size: 5307
+  object_id: d066bdd6-f799-46a4-721b-17969be16cda
+  sha: 43eabe42bb8d6e8dfe33f3a815f265ac5d5bb586
+sonarqube/sonarqube-6.5.zip:
+  size: 143286376
+  object_id: 4f05d200-ec59-4087-49a8-009d05b0939c
+  sha: 266051af830e1462f3455802326a52ba6f86efd9
