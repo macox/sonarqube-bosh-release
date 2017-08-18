@@ -1,11 +1,19 @@
 ---
 name: sonarqube
 
-templates:
-     bin/ctl.sh: bin/ctl.sh
-
 packages:
     - java
     - sonarqube
+
+templates:
+  bin/ctl: bin/ctl
+  bin/sonarqube: bin/sonarqube
+  bin/monit_debugger: bin/monit_debugger
+  helpers/ctl_setup.sh: helpers/ctl_setup.sh
+  helpers/ctl_utils.sh: helpers/ctl_utils.sh
+
+provides:
+- name: sonarqube
+  type: sonarqube
 
 properties: {}

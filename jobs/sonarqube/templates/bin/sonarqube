@@ -1,0 +1,15 @@
+#!/bin/sh -e
+
+export JAVA_HOME=/var/vcap/packages/java
+JAVA=${JAVA_HOME}/bin/java
+
+export JAVA_OPTS=""
+export JAVA_TOOL_OPTIONS=""
+#export JAVA_TOOL_OPTIONS="-Djava.awt.headless=true"
+
+SONARQUBE=/var/vcap/packages/sonarqube/bin/linux-x86-64/sonar.sh
+MEMORY_SETTINGS=""
+
+#start sonarqube
+echo "${JAVA} ${MEMORY_SETTINGS} ${JAVA_OPTS} -jar ${SONARQUBE} start"
+${JAVA} ${MEMORY_SETTINGS} ${JAVA_OPTS} -jar ${SONARQUBE} start
